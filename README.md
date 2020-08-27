@@ -31,7 +31,13 @@ import * as React from 'react'
 import Cursor from 'react-cursor-follower'
 
 const Component = (props) => {
-  return <Cursor />
+  return <Cursor 
+	pulse
+	color="#E1AD01"
+	duration={1}
+	size={45}
+	hollow
+  />
 }
 ```
 
