@@ -1,4 +1,6 @@
-const path = require('path');
+"use strict";
+
+var path = require('path');
 
 module.exports = {
   mode: 'production',
@@ -6,28 +8,22 @@ module.exports = {
   output: {
     path: path.resolve('lib'),
     filename: 'cursor.js',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'commonjs2'
   },
   module: {
-    rules: [
-      {
-        test: /\.js?$/,
-        exclude: /(node_modules)/,
-        use: 'babel-loader',
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ],
+    rules: [{
+      test: /\.js?$/,
+      exclude: /(node_modules)/,
+      use: 'babel-loader'
+    }, {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }]
   },
   resolve: {
     alias: {
       'react': path.resolve(__dirname, './node_modules/react'),
-      'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+      'react-dom': path.resolve(__dirname, './node_modules/react-dom')
     }
   },
   externals: {

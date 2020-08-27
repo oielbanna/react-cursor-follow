@@ -1,8 +1,8 @@
 {
-    "name": "YOUR_PACKAGE_NAME",
-    "version": "0.1.0",
-    "description": "",
-    "main": "./lib/YOUR_COMPONENT.js",
+    "name": "react-cursor-follow",
+    "version": "1.1.0",
+    "description": "A react component library for cursor follower.",
+    "main": "./lib/cursor.js",
     "license": "MIT",
     "scripts": {
         "build": "webpack"
@@ -27,5 +27,13 @@
         "webpack": "^4.5.0",
         "webpack-cli": "^3.2.1"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "homepage": "https://github.com/oielbanna/react-cursor-follow#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oielbanna/react-cursor-follow"
+    },
+    "bugs": {
+        "url": "https://github.com/oielbanna/react-cursor-follow/issues"
+    }
 }
